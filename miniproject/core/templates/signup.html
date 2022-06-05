@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-gray-200">
+        <div class="flex flex-wrap m-12 max-w-screen-2xl">
+            <div class="w-2/5 bg-white p-16">
+                <!-- login form -->
+
+                <div class="bg-white px-4 py-20">
+                    <img class="w-1/5 pb-12" src="https://www.waqart.com/logos/Pixme-Symbol-Black.svg" alt="" />
+                    <h2 class="text-3xl font-bold mb-2 text-gray-800">Create your account</h2>
+                    <div class="mb-8">Or <span class="text-purple-600" </span>start your 14-days free trial</div>
+
+                    <form class="space-y-5" method="post">{% csrf_token %}
+                        <div>
+                            <label class="block mb-2 text-xs text-gray-500 uppercase font-bold">Full Name*</label>
+                            <input type="text" name="name" value="" required class="border border-gray-200 p-3 w-full rounded outline-none focus:ring-2 focus:ring-blue-600" />
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 text-xs text-gray-500 uppercase font-bold">Email Address*</label>
+                            <input type="email" name="email" value="" required class="border border-gray-200 p-3 w-full rounded outline-none focus:ring-2 focus:ring-blue-600" />
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 text-xs text-gray-500 uppercase font-bold">Password*</label>
+                            <input type="password" name="pwd" value="" required class="border border-gray-200 p-3 w-full rounded outline-none focus:ring-2 focus:ring-blue-600" />
+                        </div>
+
+                        <div class="flex items-center">
+                            <input type="checkbox" id="agree" class="form-checkbox h-5 w-5" />
+                            <lebel for="agree" class="ml-2 text-gray-500">I agree to the terms and privacy.</lebel>
+                        </div>
+
+                        <button class="block w-full bg-purple-700 hover:bg-purple-500 p-4 rounded text-white transition duration-300">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="w-3/5 bg-red-300">
+                <img class="h-70 w-full object-cover" src="https://source.unsplash.com/daily" />
+                <bg></bg>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

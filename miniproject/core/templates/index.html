@@ -1,0 +1,146 @@
+{% extends 'navbar.html' %}
+<!DOCTYPE html> {% block navbar %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- component -->
+    <section>
+        <div class="bg-black text-white py-20">
+            <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+                <div class="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
+                    <h1 class="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">TechFest</h1>
+                    <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">Space : The Timeless Infinity
+                    </h2>
+                    <p class="text-sm md:text-base text-gray-50 mb-4">Explore your favourite events and register now to showcase your talent and win exciting prizes.</p>
+                    <a href="#" class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent">
+					Explore Now</a>
+                </div>
+                <div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
+                    <div class="h-48 flex flex-wrap content-center">
+                        <div>
+                            <img class="inline-block mt-28 hidden xl:block" src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png"></div>
+                        <div>
+                            <img class="inline-block mt-24 md:mt-0 p-8 md:p-0" src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png"></div>
+                        <div>
+                            <img class="inline-block mt-28 hidden lg:block" src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mobile menu button -->
+    <div class="flex lg:hidden">
+        <button type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                                <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                                    <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                                </svg>
+        </button>
+    </div>
+
+    <div class="w-full bg-center bg-cover h-[32rem]" style="background-image: url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">
+        <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
+            <div class="text-center">
+                <h1 class="text-2xl font-semibold text-white uppercase lg:text-3xl">Build Your new <span class="text-blue-400 underline">Saas</span></h1>
+                <button class="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Start project</button>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <!-- component -->
+    <!doctype html>
+    <html lang="id-ID">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <!---
+	You may need jQuery
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	--->
+        <style>
+            /*
+		You may need this for responsive background
+		header {
+			background: url('bg-425.jpg');
+		}
+
+		@media only screen and (min-width:640px) {
+			header {
+				background: url('bg-640.jpg');
+			}
+		}
+
+		@media only screen and (min-width:768px) {
+			header {
+				background: url('bg-768.jpg');
+			}
+		}
+
+		@media only screen and (min-width:1024px) {
+			header {
+				background: url('bg-1024.jpg');
+			}
+		}
+
+		@media only screen and (min-width:1025px) {
+			header {
+				background: url('bg-max.jpg');
+			}
+		} */
+            /* Default background by https://www.pexels.com/@knownasovan */
+            
+            header {
+                background: url('https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent">
+
+            <!-- Burger Nav Button on Mobile -->
+            <div id="nav-open" class="p-4 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+				<line x1="3" y1="12" x2="21" y2="12"></line>
+				<line x1="3" y1="6" x2="21" y2="6"></line>
+				<line x1="3" y1="18" x2="21" y2="18"></line>
+			</svg>
+            </div>
+        </nav>
+
+
+        <header id="up" class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+            <!-- Overlay Background + Center Control -->
+            <div class="h-screen bg-opacity-50 bg-black flex items-center justify-center" style="background:rgba(0,0,0,0.5);">
+                <div class="mx-2 text-center">
+                    <h1 class="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl">
+                        <span class="text-white">Right</span> Place To
+                    </h1>
+                    <h2 class="text-gray-200 font-extrabold text-3xl xs:text-4xl md:text-5xl leading-tight">
+                        Get a <span class="text-white">Better</span> and <span class="text-white">Professionals</span> Design
+                    </h2>
+                    <div class="inline-flex">
+                        <button class="p-2 my-5 mx-2 bg-indigo-700 hover:bg-indigo-800 font-bold text-white rounded border-2 border-transparent hover:border-indigo-800 shadow-md transition duration-500 md:text-xl">Hire US!</button>
+                        <a href="#about"><button class="p-2 my-5 mx-2 bg-transparent border-2 bg-indigo-200 bg-opacity-75 hover:bg-opacity-100 border-indigo-700 rounded hover:border-indigo-800 font-bold text-indigo-800 shadow-md transition duration-500 md:text-lg">Learn More</button></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+
+    </html>
+</body>
+
+</html>
+{% endblock navbar %}

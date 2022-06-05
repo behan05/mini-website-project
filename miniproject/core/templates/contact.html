@@ -1,0 +1,49 @@
+<!DOCTYPE html> {% load static %}
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact-Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/contact.css' %}">
+
+</head>
+
+<body>
+    <section id="contact">
+        <div class="contact-box">
+            <div class="contact-links">
+                <h2>CONTACT</h2>
+                <div class="links">
+                    <div class="link">
+                        <a href="https://www.linkedin.com/in/behankumar?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2bNkl6wZSrGgAbd8BtOnxg%3D%3D"><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/behan05"><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+                    </div>
+                    <div class="link">
+                        <a href="https://mail.google.com"><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form>
+                    <div class="form-item">
+                        <input type="text" name="sender" required>
+                        <label>Name:</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="text" name="email" required>
+                        <label>Email:</label>
+                    </div>
+                    <div class="form-item">
+                        <textarea class="" name="message" required></textarea>
+                        <label>Message:</label>
+                    </div>
+                    <button class="submit-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>

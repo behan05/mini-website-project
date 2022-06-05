@@ -1,0 +1,29 @@
+html,
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 16px;
+}
+
+.template-container {
+    min-width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #adc4dd;
+    height: 100%;
+}
+
+.template-frame {
+    width: 30rem;
+    height: 30rem;
+    background-color: #e1e9e9;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem 0 #2a2f3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Start here */

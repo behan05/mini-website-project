@@ -1,0 +1,199 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <title>Blog</title>
+</head>
+
+<body style="background-color: black;color: aqua;">
+    <div class="main_container container">
+        <div class="header-logo">
+            <h2 class="text-primary">BSWEB| Blog</h2>
+            <a href="{% url 'home' %}"><button type="button" class="btn btn-outline-success">Home</button></a>
+        </div>
+
+        <div class="jumbotron image-fluid">
+            <div class="container">
+                <h1>The value of cups of coffee</h1>
+                <p>Also known as regular coffee,<br> brewed coffee is made by pouring hot or boiling water over ground coffee beans,<br> usually contained in a filter. </p>
+
+                <p><a href="#" class="btn btn-outline-primary">Learn more</a></p>
+            </div>
+        </div>
+
+
+        <div class="main_body row">
+            <div class="col-md-8">
+                <div class="post">
+                    <h2 class="post_title"><a href="#">how to Learn program free today</a></h2>
+                    <p><span class="post_author">Post:</span> | <span class="post_date">May 22, 2022</span></p>
+                    <p>Best 8 Websites To Learn To Code For Free In 2022</p>
+                    <hr>
+                    <p>Codecademy.<br> Codecademy is the perfect place for aspiring coders to start learning.<br> Free Code Camp. <br> Codewars. <br> The Odin Project. <br> HackerRank. <br> CodeFights. <br> edX. <br> Upskill.
+                    </p>
+                    <p><a href="#" class="btn btn-outline-primary">Read more</a></p>
+                    <hr>
+                </div>
+
+                <div class="post">
+                    <h2 class="post_title"><a href="Can I self teach myself coding?">Can I self teach myself coding?</a></h2>
+                    <p><span class="post_author">Post:</span> | <span class="post_date">May 22, 2022</span></p>
+                    <p> yes, it is entirely possible that you can be a self-taught programmer.<br> However, it will be a long, tedious process.<br> There's a saying that it takes roughly 10,000 hours of practice to achieve mastery in a field.</p>
+                    <p><a href="#" class="btn btn-outline-primary">Read more</a></p>
+                    <hr>
+                </div>
+
+                <div class="post">
+                    <h2 class="post_title"><a href="#">Welcome to my blog</a></h2>
+                    <p><span class="post_author">Post:</span> | <span class="post_date">May 22, 2022</span></p>
+                    <p>A blog is useful for many reasons. It can become a source of leads, it can be the place where, in the future, you might sell your products if you want to become an indie developer, or it can simply be the place where you have your
+                        audience and express your ideas.<br></p>
+                    <p><a href="{% url 'Support-blog1' %}" class="btn btn-outline-primary">Read more</a></p>
+                    <hr>
+                </div>
+
+                <!-- <div class="post">
+                    <h2 class="post_title"><a href="#">Hello World!</a></h2>
+                    <p><span class="post_author">Post:</span> | <span class="post_date">March 1, 2017</span></p>
+                    <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+                    <p><a href="#" class="btn btn-outline-primary">Read more</a></p>
+                </div> -->
+
+
+
+
+
+                <div class="post_pagination">
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                            </li>
+                            <li class="page-item active"><span class="page-link"> 1 <span class="sr-only">(current)</span>
+                                </span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <hr>
+                <div class="comments">
+                    <h2>Comments:</h2>
+                    <div class="form-group">
+                        <label for="usr">Name *</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pwd">Email *</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment">Comment</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+
+                    <div class="checkbox">
+                        <label><input type="checkbox" value=""> Notify me of new comments via email.</label>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-outline-primary">Post comment</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="sidebar col-md-4">
+
+                <!--Social icoons-->
+                <div class="sidebar_social">
+                    <div class="btnList text-center">
+                        <a class="btn btn-default" href="#"> <i class="fa fa-facebook fa-lg" id="facebookIcon" aria-hidden="true"></i></a>
+                        <a class="btn btn-default" href="#"> <i class="fa fa-twitter fa-lg" id="twitterIcon" aria-hidden="true"></i></a>
+                        <a class="btn btn-default" href="#"> <i class="fa fa-google-plus fa-lg" id="googlePlusIcon" aria-hidden="true"></i></a>
+                        <a class="btn btn-default" href="#"> <i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i></a>
+                        <a class="btn btn-default" href="#"> <i class="fa fa-linkedin-square fa-lg" id="linkedinIcon" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+                <!--to search the site-->
+                <div class="sidebar_search">
+                    <form class="form-horizontal">
+                        <div>
+                            <p><input type="text" class="form-control" id="search" placeholder="Search"></p>
+                        </div>
+
+                        <div>
+
+                            <p><button type="submit" class="btn btn-outline-primary">Submit</button></p>
+                        </div>
+                    </form>
+                </div>
+
+                <!--recent post-->
+                <div class="sidebar_recent_posts">
+                    <h3>Recent Posts</h3>
+                    <hr>
+                    <p><a href="#">Learn how to program free</a></p>
+                    <p><a href="#">Why did the chicken cross the road</a>.</p>
+                    <p><a href="#">Welcome to my blog</a></p>
+
+                </div>
+
+                <!--subscribe by enmail-->
+                <div class="sidebar_subscribe">
+                    <h3>Subscribe</h3>
+                    <hr>
+                    <p>Get notified of new posts weekly.</p>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <p><input type="email" class="form-control" id="email" placeholder="Enter your email"></p>
+                        </div>
+                        <a href="{% url 'signup' %}"><button type="button" class="btn btn-outline-primary">Follow Me</button></a>
+                    </form>
+                </div>
+
+
+                <!--login-->
+                <div class="sidebar_login">
+                    <h3>Login</h3>
+                    <hr>
+                    <form class="form-inline" method="post">{% csrf_token %}
+                        <div class="form-group">
+                            <p><input type="email" class="form-control" id="email" placeholder="Enter Email"></p>
+                        </div>
+                        <div class="form-group">
+                            <p><input type="password" class="form-control" id="pwd" placeholder="Enter Password"></p>
+                        </div>
+                        <div class="checkbox">
+                            <p><label><input type="checkbox"> Remember me</label></p>
+                        </div>
+                        <a href="{% url 'login' %}"><button type="button" class="btn btn-outline-primary">Login</button></a>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p><span style="color: #19B5FE">Copyright & copy 2022 | All rights reserved.</span> </p>
+            <p><span style="color: #f90e0e94">Designed and coded by: </span><span style="color: #fff">BEHAN_KUMAR.</span></p>
+        </div>
+    </div>
+</body>
+
+</html>
